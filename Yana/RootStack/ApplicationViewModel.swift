@@ -27,4 +27,19 @@ final class ApplicationViewModel {
         self.logger.info("UI appeared")
     }
 
+    func makeSidebarViewController() -> SidebarViewController {
+        let viewModel = SidebarViewModel()
+        return SidebarViewController(viewModel: viewModel)
+    }
+
+    func makeNoteListViewController() -> NoteListViewController {
+        let viewModel = NoteListViewModel()
+        return NoteListViewController(viewModel: viewModel)
+    }
+
+    func makeNoteDetailsViewController() -> NoteDetailsViewController {
+        let viewModel = NoteDetailsViewModel()
+        return NoteDetailsViewController(viewModel: viewModel)
+    }
+
 }

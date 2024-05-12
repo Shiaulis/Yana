@@ -36,13 +36,13 @@ final class ApplicationViewController: UISplitViewController {
     // MARK : Private API -
 
     private func setup() {
-        let sidebar = SidebarViewController()
+        let sidebar = self.viewModel.makeSidebarViewController()
         setViewController(sidebar, for: .primary)
 
-        let noteList = NoteListViewController()
+        let noteList = self.viewModel.makeNoteListViewController()
         setViewController(noteList, for: .supplementary)
 
-        let noteDetails = NoteDetailsViewController()
+        let noteDetails = self.viewModel.makeNoteDetailsViewController()
         setViewController(noteDetails, for: .secondary)
 
         self.preferredSplitBehavior = .tile

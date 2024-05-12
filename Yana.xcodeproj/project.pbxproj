@@ -24,6 +24,9 @@
 		B151FE252BF136B90090D9B7 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE242BF136B90090D9B7 /* NoteListViewController.swift */; };
 		B151FE272BF137220090D9B7 /* NoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE262BF137220090D9B7 /* NoteDetailsViewController.swift */; };
 		B151FE4B2BF156A00090D9B7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B151FE4A2BF156A00090D9B7 /* Localizable.xcstrings */; };
+		B151FE4D2BF157CE0090D9B7 /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE4C2BF157CE0090D9B7 /* SidebarViewModel.swift */; };
+		B151FE542BF1590E0090D9B7 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE532BF1590E0090D9B7 /* NoteListViewModel.swift */; };
+		B151FE572BF1595E0090D9B7 /* NoteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE562BF1595E0090D9B7 /* NoteDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		B151FE242BF136B90090D9B7 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
 		B151FE262BF137220090D9B7 /* NoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewController.swift; sourceTree = "<group>"; };
 		B151FE4A2BF156A00090D9B7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B151FE4C2BF157CE0090D9B7 /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
+		B151FE532BF1590E0090D9B7 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
+		B151FE562BF1595E0090D9B7 /* NoteDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				B151FE202BF1324B0090D9B7 /* RootStack */,
+				B151FE582BF159B50090D9B7 /* Modules */,
 				B151FE212BF132900090D9B7 /* Extensions */,
 				B151FE1F2BF1323F0090D9B7 /* SupportingFiles */,
 			);
@@ -162,9 +169,6 @@
 				B151FE1D2BF12D180090D9B7 /* ApplicationViewModel.swift */,
 				B151FDE72BF1263F0090D9B7 /* ApplicationViewController.swift */,
 				B151FE172BF128E40090D9B7 /* PersistentContainer.swift */,
-				B151FE222BF136960090D9B7 /* SidebarViewController.swift */,
-				B151FE242BF136B90090D9B7 /* NoteListViewController.swift */,
-				B151FE262BF137220090D9B7 /* NoteDetailsViewController.swift */,
 			);
 			path = RootStack;
 			sourceTree = "<group>";
@@ -175,6 +179,43 @@
 				B151FE192BF129CB0090D9B7 /* Logger+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B151FE512BF158FA0090D9B7 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				B151FE4C2BF157CE0090D9B7 /* SidebarViewModel.swift */,
+				B151FE222BF136960090D9B7 /* SidebarViewController.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		B151FE522BF159030090D9B7 /* NoteList */ = {
+			isa = PBXGroup;
+			children = (
+				B151FE242BF136B90090D9B7 /* NoteListViewController.swift */,
+				B151FE532BF1590E0090D9B7 /* NoteListViewModel.swift */,
+			);
+			path = NoteList;
+			sourceTree = "<group>";
+		};
+		B151FE552BF1594F0090D9B7 /* NoteDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B151FE262BF137220090D9B7 /* NoteDetailsViewController.swift */,
+				B151FE562BF1595E0090D9B7 /* NoteDetailsViewModel.swift */,
+			);
+			path = NoteDetails;
+			sourceTree = "<group>";
+		};
+		B151FE582BF159B50090D9B7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B151FE512BF158FA0090D9B7 /* Sidebar */,
+				B151FE522BF159030090D9B7 /* NoteList */,
+				B151FE552BF1594F0090D9B7 /* NoteDetails */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,14 +352,17 @@
 				B151FDE82BF1263F0090D9B7 /* ApplicationViewController.swift in Sources */,
 				B151FDE42BF1263F0090D9B7 /* AppDelegate.swift in Sources */,
 				B151FE182BF128E40090D9B7 /* PersistentContainer.swift in Sources */,
+				B151FE4D2BF157CE0090D9B7 /* SidebarViewModel.swift in Sources */,
 				B151FDEE2BF1263F0090D9B7 /* Yana.xcdatamodeld in Sources */,
 				B151FE1C2BF12BF70090D9B7 /* ApplicationController.swift in Sources */,
+				B151FE542BF1590E0090D9B7 /* NoteListViewModel.swift in Sources */,
 				B151FE1E2BF12D180090D9B7 /* ApplicationViewModel.swift in Sources */,
 				B151FE1A2BF129CB0090D9B7 /* Logger+Extensions.swift in Sources */,
 				B151FE272BF137220090D9B7 /* NoteDetailsViewController.swift in Sources */,
 				B151FE232BF136960090D9B7 /* SidebarViewController.swift in Sources */,
 				B151FE252BF136B90090D9B7 /* NoteListViewController.swift in Sources */,
 				B151FDE62BF1263F0090D9B7 /* SceneDelegate.swift in Sources */,
+				B151FE572BF1595E0090D9B7 /* NoteDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
