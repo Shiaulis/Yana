@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		B151FDE42BF1263F0090D9B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FDE32BF1263F0090D9B7 /* AppDelegate.swift */; };
 		B151FDE62BF1263F0090D9B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FDE52BF1263F0090D9B7 /* SceneDelegate.swift */; };
-		B151FDE82BF1263F0090D9B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FDE72BF1263F0090D9B7 /* ViewController.swift */; };
+		B151FDE82BF1263F0090D9B7 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FDE72BF1263F0090D9B7 /* ApplicationViewController.swift */; };
 		B151FDEE2BF1263F0090D9B7 /* Yana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B151FDEC2BF1263F0090D9B7 /* Yana.xcdatamodeld */; };
 		B151FDF02BF126400090D9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B151FDEF2BF126400090D9B7 /* Assets.xcassets */; };
 		B151FDF32BF126400090D9B7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B151FDF22BF126400090D9B7 /* Base */; };
 		B151FDFE2BF126400090D9B7 /* YanaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FDFD2BF126400090D9B7 /* YanaTests.swift */; };
 		B151FE082BF126400090D9B7 /* YanaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE072BF126400090D9B7 /* YanaUITests.swift */; };
 		B151FE0A2BF126400090D9B7 /* YanaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE092BF126400090D9B7 /* YanaUITestsLaunchTests.swift */; };
+		B151FE182BF128E40090D9B7 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE172BF128E40090D9B7 /* PersistentContainer.swift */; };
+		B151FE1A2BF129CB0090D9B7 /* Logger+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE192BF129CB0090D9B7 /* Logger+Extensions.swift */; };
+		B151FE1C2BF12BF70090D9B7 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE1B2BF12BF70090D9B7 /* ApplicationController.swift */; };
+		B151FE1E2BF12D180090D9B7 /* ApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE1D2BF12D180090D9B7 /* ApplicationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,7 @@
 		B151FDE02BF1263F0090D9B7 /* Yana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B151FDE32BF1263F0090D9B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B151FDE52BF1263F0090D9B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B151FDE72BF1263F0090D9B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B151FDE72BF1263F0090D9B7 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
 		B151FDED2BF1263F0090D9B7 /* Yana.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yana.xcdatamodel; sourceTree = "<group>"; };
 		B151FDEF2BF126400090D9B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B151FDF22BF126400090D9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +54,10 @@
 		B151FE072BF126400090D9B7 /* YanaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanaUITests.swift; sourceTree = "<group>"; };
 		B151FE092BF126400090D9B7 /* YanaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B151FE162BF126A80090D9B7 /* Yana.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yana.entitlements; sourceTree = "<group>"; };
+		B151FE172BF128E40090D9B7 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		B151FE192BF129CB0090D9B7 /* Logger+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extensions.swift"; sourceTree = "<group>"; };
+		B151FE1B2BF12BF70090D9B7 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
+		B151FE1D2BF12D180090D9B7 /* ApplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +111,11 @@
 				B151FE162BF126A80090D9B7 /* Yana.entitlements */,
 				B151FDE32BF1263F0090D9B7 /* AppDelegate.swift */,
 				B151FDE52BF1263F0090D9B7 /* SceneDelegate.swift */,
-				B151FDE72BF1263F0090D9B7 /* ViewController.swift */,
+				B151FE1B2BF12BF70090D9B7 /* ApplicationController.swift */,
+				B151FE1D2BF12D180090D9B7 /* ApplicationViewModel.swift */,
+				B151FDE72BF1263F0090D9B7 /* ApplicationViewController.swift */,
+				B151FE172BF128E40090D9B7 /* PersistentContainer.swift */,
+				B151FE192BF129CB0090D9B7 /* Logger+Extensions.swift */,
 				B151FDEF2BF126400090D9B7 /* Assets.xcassets */,
 				B151FDF12BF126400090D9B7 /* LaunchScreen.storyboard */,
 				B151FDF42BF126400090D9B7 /* Info.plist */,
@@ -259,9 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B151FDE82BF1263F0090D9B7 /* ViewController.swift in Sources */,
+				B151FDE82BF1263F0090D9B7 /* ApplicationViewController.swift in Sources */,
 				B151FDE42BF1263F0090D9B7 /* AppDelegate.swift in Sources */,
+				B151FE182BF128E40090D9B7 /* PersistentContainer.swift in Sources */,
 				B151FDEE2BF1263F0090D9B7 /* Yana.xcdatamodeld in Sources */,
+				B151FE1C2BF12BF70090D9B7 /* ApplicationController.swift in Sources */,
+				B151FE1E2BF12D180090D9B7 /* ApplicationViewModel.swift in Sources */,
+				B151FE1A2BF129CB0090D9B7 /* Logger+Extensions.swift in Sources */,
 				B151FDE62BF1263F0090D9B7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
