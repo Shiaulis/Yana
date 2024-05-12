@@ -108,18 +108,9 @@
 		B151FDE22BF1263F0090D9B7 /* Yana */ = {
 			isa = PBXGroup;
 			children = (
-				B151FE162BF126A80090D9B7 /* Yana.entitlements */,
-				B151FDE32BF1263F0090D9B7 /* AppDelegate.swift */,
-				B151FDE52BF1263F0090D9B7 /* SceneDelegate.swift */,
-				B151FE1B2BF12BF70090D9B7 /* ApplicationController.swift */,
-				B151FE1D2BF12D180090D9B7 /* ApplicationViewModel.swift */,
-				B151FDE72BF1263F0090D9B7 /* ApplicationViewController.swift */,
-				B151FE172BF128E40090D9B7 /* PersistentContainer.swift */,
-				B151FE192BF129CB0090D9B7 /* Logger+Extensions.swift */,
-				B151FDEF2BF126400090D9B7 /* Assets.xcassets */,
-				B151FDF12BF126400090D9B7 /* LaunchScreen.storyboard */,
-				B151FDF42BF126400090D9B7 /* Info.plist */,
-				B151FDEC2BF1263F0090D9B7 /* Yana.xcdatamodeld */,
+				B151FE202BF1324B0090D9B7 /* RootStack */,
+				B151FE212BF132900090D9B7 /* Extensions */,
+				B151FE1F2BF1323F0090D9B7 /* SupportingFiles */,
 			);
 			path = Yana;
 			sourceTree = "<group>";
@@ -139,6 +130,39 @@
 				B151FE092BF126400090D9B7 /* YanaUITestsLaunchTests.swift */,
 			);
 			path = YanaUITests;
+			sourceTree = "<group>";
+		};
+		B151FE1F2BF1323F0090D9B7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B151FE162BF126A80090D9B7 /* Yana.entitlements */,
+				B151FDEF2BF126400090D9B7 /* Assets.xcassets */,
+				B151FDF12BF126400090D9B7 /* LaunchScreen.storyboard */,
+				B151FDF42BF126400090D9B7 /* Info.plist */,
+				B151FDEC2BF1263F0090D9B7 /* Yana.xcdatamodeld */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B151FE202BF1324B0090D9B7 /* RootStack */ = {
+			isa = PBXGroup;
+			children = (
+				B151FDE32BF1263F0090D9B7 /* AppDelegate.swift */,
+				B151FDE52BF1263F0090D9B7 /* SceneDelegate.swift */,
+				B151FE1B2BF12BF70090D9B7 /* ApplicationController.swift */,
+				B151FE1D2BF12D180090D9B7 /* ApplicationViewModel.swift */,
+				B151FDE72BF1263F0090D9B7 /* ApplicationViewController.swift */,
+				B151FE172BF128E40090D9B7 /* PersistentContainer.swift */,
+			);
+			path = RootStack;
+			sourceTree = "<group>";
+		};
+		B151FE212BF132900090D9B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B151FE192BF129CB0090D9B7 /* Logger+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,12 +474,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Yana/Yana.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Yana/SupportingFiles/Yana.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NFA8F38A32;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Yana/Info.plist;
+				INFOPLIST_FILE = Yana/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -478,12 +503,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Yana/Yana.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Yana/SupportingFiles/Yana.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NFA8F38A32;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Yana/Info.plist;
+				INFOPLIST_FILE = Yana/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
