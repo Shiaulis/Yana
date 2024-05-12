@@ -14,7 +14,7 @@ final class NoteListViewController: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = .systemBackground
-        self.title = "Notes"
+        self.title = String(localized: "Notes")
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 }

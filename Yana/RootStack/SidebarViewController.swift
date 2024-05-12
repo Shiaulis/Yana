@@ -14,7 +14,6 @@ final class SidebarViewController: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = .systemBackground
-        self.title = "Yana"
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 }

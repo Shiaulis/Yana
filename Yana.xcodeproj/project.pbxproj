@@ -23,6 +23,7 @@
 		B151FE232BF136960090D9B7 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE222BF136960090D9B7 /* SidebarViewController.swift */; };
 		B151FE252BF136B90090D9B7 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE242BF136B90090D9B7 /* NoteListViewController.swift */; };
 		B151FE272BF137220090D9B7 /* NoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE262BF137220090D9B7 /* NoteDetailsViewController.swift */; };
+		B151FE4B2BF156A00090D9B7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B151FE4A2BF156A00090D9B7 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B151FE222BF136960090D9B7 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 		B151FE242BF136B90090D9B7 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
 		B151FE262BF137220090D9B7 /* NoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewController.swift; sourceTree = "<group>"; };
+		B151FE4A2BF156A00090D9B7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				B151FDF12BF126400090D9B7 /* LaunchScreen.storyboard */,
 				B151FDF42BF126400090D9B7 /* Info.plist */,
 				B151FDEC2BF1263F0090D9B7 /* Yana.xcdatamodeld */,
+				B151FE4A2BF156A00090D9B7 /* Localizable.xcstrings */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			files = (
 				B151FDF02BF126400090D9B7 /* Assets.xcassets in Resources */,
 				B151FDF32BF126400090D9B7 /* Base in Resources */,
+				B151FE4B2BF156A00090D9B7 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

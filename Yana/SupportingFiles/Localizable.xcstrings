@@ -1,0 +1,10 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Notes" : {
+      "comment" : "Title of the notes list",
+      "extractionState" : "manual"
+    }
+  },
+  "version" : "1.0"
+}
