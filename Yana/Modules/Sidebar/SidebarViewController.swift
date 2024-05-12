@@ -8,17 +8,27 @@
 import Foundation
 import UIKit
 
-final class SidebarViewController: UIViewController {
+final class SidebarViewController: UICollectionViewController {
+
+    // MARK: - Types -
+    private enum Section { case main }
+    private typealias Item = SidebarViewModel.SidebarItem
+    private typealias SectionSnapshot = NSDiffableDataSourceSectionSnapshot<Item>
+    private typealias DataSource = UICollectionViewDiffableDataSource<Section, Item>
 
     // MARK: - Properties -
 
     private let viewModel: SidebarViewModel
+    private lazy var dataSource = makeDataSource()
 
     // MARK: - Init -
 
     init(viewModel: SidebarViewModel) {
         self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
+
+        let configuration = UICollectionLayoutListConfiguration(appearance: .sidebar)
+        let layout = UICollectionViewCompositionalLayout.list(using: configuration)
+        super.init(collectionViewLayout: layout)
     }
 
     required init?(coder: NSCoder) {
@@ -30,8 +40,36 @@ final class SidebarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = .systemBackground
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        populateInitialSnapshot()
+    }
+
+    // MARK: - Private API -
+
+    private func populateInitialSnapshot() {
+        var sectionSnapshot = SectionSnapshot()
+        sectionSnapshot.append(viewModel.items)
+        self.dataSource.apply(sectionSnapshot, to: .main, animatingDifferences: false)
+    }
+
+    private func makeDataSource() -> DataSource {
+        let sidebarItemCellRegistration = makeSidebarItemCellRegistration()
+        return DataSource(collectionView: self.collectionView) {
+            collectionView, indexPath, item -> UICollectionViewCell? in
+            return collectionView.dequeueConfiguredReusableCell(
+                using: sidebarItemCellRegistration, for: indexPath, item: item)
+        }
+    }
+
+    private func makeSidebarItemCellRegistration() ->
+    UICollectionView.CellRegistration<UICollectionViewListCell, Item> {
+        return .init { cell, _, item in
+            var content = cell.defaultContentConfiguration()
+            content.text = item.title
+            content.image = UIImage(systemName: item.icon)
+            cell.contentConfiguration = content
+            cell.accessories = [.disclosureIndicator()]
+        }
     }
 
 }
