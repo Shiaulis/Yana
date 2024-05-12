@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ApplicationViewController: UIViewController {
+final class ApplicationViewController: UISplitViewController {
 
     // MARK: - Properties -
 
@@ -17,7 +17,9 @@ final class ApplicationViewController: UIViewController {
 
     init(viewModel: ApplicationViewModel) {
         self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
+        super.init(style: .tripleColumn)
+
+        setup()
     }
     
     required init?(coder: NSCoder) {
@@ -26,15 +28,25 @@ final class ApplicationViewController: UIViewController {
 
     // MARK: - View Controller Lifecycle -
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.view.backgroundColor = .orange
-    }
-
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.viewModel.didAppear()
+    }
+
+    // MARK : Private API -
+
+    private func setup() {
+        let sidebar = SidebarViewController()
+        setViewController(sidebar, for: .primary)
+
+        let noteList = NoteListViewController()
+        setViewController(noteList, for: .supplementary)
+
+        let noteDetails = NoteDetailsViewController()
+        setViewController(noteDetails, for: .secondary)
+
+        self.preferredSplitBehavior = .tile
+        self.preferredDisplayMode = .twoBesideSecondary
     }
 
 }

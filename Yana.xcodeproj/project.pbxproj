@@ -20,6 +20,9 @@
 		B151FE1A2BF129CB0090D9B7 /* Logger+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE192BF129CB0090D9B7 /* Logger+Extensions.swift */; };
 		B151FE1C2BF12BF70090D9B7 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE1B2BF12BF70090D9B7 /* ApplicationController.swift */; };
 		B151FE1E2BF12D180090D9B7 /* ApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE1D2BF12D180090D9B7 /* ApplicationViewModel.swift */; };
+		B151FE232BF136960090D9B7 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE222BF136960090D9B7 /* SidebarViewController.swift */; };
+		B151FE252BF136B90090D9B7 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE242BF136B90090D9B7 /* NoteListViewController.swift */; };
+		B151FE272BF137220090D9B7 /* NoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE262BF137220090D9B7 /* NoteDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		B151FE192BF129CB0090D9B7 /* Logger+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extensions.swift"; sourceTree = "<group>"; };
 		B151FE1B2BF12BF70090D9B7 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
 		B151FE1D2BF12D180090D9B7 /* ApplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewModel.swift; sourceTree = "<group>"; };
+		B151FE222BF136960090D9B7 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		B151FE242BF136B90090D9B7 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		B151FE262BF137220090D9B7 /* NoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,9 @@
 				B151FE1D2BF12D180090D9B7 /* ApplicationViewModel.swift */,
 				B151FDE72BF1263F0090D9B7 /* ApplicationViewController.swift */,
 				B151FE172BF128E40090D9B7 /* PersistentContainer.swift */,
+				B151FE222BF136960090D9B7 /* SidebarViewController.swift */,
+				B151FE242BF136B90090D9B7 /* NoteListViewController.swift */,
+				B151FE262BF137220090D9B7 /* NoteDetailsViewController.swift */,
 			);
 			path = RootStack;
 			sourceTree = "<group>";
@@ -302,6 +311,9 @@
 				B151FE1C2BF12BF70090D9B7 /* ApplicationController.swift in Sources */,
 				B151FE1E2BF12D180090D9B7 /* ApplicationViewModel.swift in Sources */,
 				B151FE1A2BF129CB0090D9B7 /* Logger+Extensions.swift in Sources */,
+				B151FE272BF137220090D9B7 /* NoteDetailsViewController.swift in Sources */,
+				B151FE232BF136960090D9B7 /* SidebarViewController.swift in Sources */,
+				B151FE252BF136B90090D9B7 /* NoteListViewController.swift in Sources */,
 				B151FDE62BF1263F0090D9B7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
