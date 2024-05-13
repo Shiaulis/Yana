@@ -7,4 +7,26 @@
 
 import Foundation
 
-final class NoteListViewModel {}
+final class NoteListViewModel {
+
+    func showEmpty() {
+        print("Show empty")
+    }
+
+    func showInbox() {
+        print("Show inbox")
+    }
+
+    func showStarred() {
+        print("Show starred")
+    }
+
+    func showArchive() {
+        print("Show archive")
+    }
+
+    func showTrash() {
+        print("Show trash")
+    }
+
+}

@@ -44,6 +44,10 @@ final class SidebarViewController: UICollectionViewController {
         populateInitialSnapshot()
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.viewModel.didSelectItem(at: indexPath.row)
+    }
+
     // MARK: - Private API -
 
     private func populateInitialSnapshot() {

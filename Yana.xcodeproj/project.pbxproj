@@ -27,6 +27,7 @@
 		B151FE4D2BF157CE0090D9B7 /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE4C2BF157CE0090D9B7 /* SidebarViewModel.swift */; };
 		B151FE542BF1590E0090D9B7 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE532BF1590E0090D9B7 /* NoteListViewModel.swift */; };
 		B151FE572BF1595E0090D9B7 /* NoteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B151FE562BF1595E0090D9B7 /* NoteDetailsViewModel.swift */; };
+		B1B34CEE2BF1D956007906F6 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B34CED2BF1D956007906F6 /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		B151FE4C2BF157CE0090D9B7 /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
 		B151FE532BF1590E0090D9B7 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
 		B151FE562BF1595E0090D9B7 /* NoteDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewModel.swift; sourceTree = "<group>"; };
+		B1B34CED2BF1D956007906F6 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				B151FE1D2BF12D180090D9B7 /* ApplicationViewModel.swift */,
 				B151FDE72BF1263F0090D9B7 /* ApplicationViewController.swift */,
 				B151FE172BF128E40090D9B7 /* PersistentContainer.swift */,
+				B1B34CED2BF1D956007906F6 /* ApplicationCoordinator.swift */,
 			);
 			path = RootStack;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				B151FE182BF128E40090D9B7 /* PersistentContainer.swift in Sources */,
 				B151FE4D2BF157CE0090D9B7 /* SidebarViewModel.swift in Sources */,
 				B151FDEE2BF1263F0090D9B7 /* Yana.xcdatamodeld in Sources */,
+				B1B34CEE2BF1D956007906F6 /* ApplicationCoordinator.swift in Sources */,
 				B151FE1C2BF12BF70090D9B7 /* ApplicationController.swift in Sources */,
 				B151FE542BF1590E0090D9B7 /* NoteListViewModel.swift in Sources */,
 				B151FE1E2BF12D180090D9B7 /* ApplicationViewModel.swift in Sources */,

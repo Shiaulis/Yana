@@ -22,7 +22,10 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let viewModel = ApplicationViewModel(controller: self.appDelegate.applicationController)
+        let viewModel = ApplicationViewModel(
+            controller: self.appDelegate.applicationController,
+            coordinator: self.appDelegate.applicationCoordinator
+        )
         let viewController = ApplicationViewController(viewModel: viewModel)
 
         self.window = window

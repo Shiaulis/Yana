@@ -12,6 +12,7 @@ import CoreData
 final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let applicationController = ApplicationController()
+    let applicationCoordinator = ApplicationCoordinator()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.applicationController.start()

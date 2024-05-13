@@ -9,6 +9,8 @@ import Foundation
 
 final class SidebarViewModel {
 
+    // MARK: - Types -
+
     struct SidebarItem: Hashable {
 
         enum SidebarItemType {
@@ -27,6 +29,19 @@ final class SidebarViewModel {
 
     }
 
+    // MARK: - Properties -
+
     let items: [SidebarItem] = [.inbox, .starred, .archive, .trash, .settings]
+    private let coordinator: ApplicationCoordinator
+
+    // MARK: - Init -
+
+    init(coordinator: ApplicationCoordinator) {
+        self.coordinator = coordinator
+    }
+
+    func didSelectItem(at index: [SidebarItem].Index) {
+        self.coordinator.open(self.items[index])
+    }
 
 }
